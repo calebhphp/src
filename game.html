@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Madurado Developers</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/jogo.css">
+  <link rel="icon" href="data:,">
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+<section>
+    <div class="mt-52 grid justify-center">
+      <img src="./img/pfizer.png" class="w-72"></img>
+        <h1 class="text-center mt-8 font-bold text-6xl text-blue-500">QUIZ</h1>
+        <h2 class="mt-2 text-center font-bold text-lg text-blue-500">CONGRESSO BRASILEIRO<br> DE NEUROLOGIA.</h2>
+  </div>
+  </section>
+  <section class="container mx-auto w-auto justify-center">
+      <main>
+        <!-- QUIZZ CONTAINER -->
+        <div id="quizz-container">
+          <p id="question">
+            <span id="question-number">1</span> &#8212;
+            <span id="question-text">Qual é a unidade de medida para metros?</span>
+          </p>
+          <div id="answers-box">
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+          </div>
+        </div>
+
+        <!-- SCORE BOARD -->
+        <div id="score-container" class="hide">
+          <h2>Parabéns</h2>
+          <p id="display-score"><span>90</span>%</p>
+          <p>
+            Você acertou <span id="correct-answers">0</span> de
+            <span id="questions-qty">10</span> perguntas
+          </p>
+          <button id="restart">Voltar</button>
+        </div>
+
+        <!-- TEMPLATE RESPOSTA -->
+        <button class="answer-template hide">
+          <span class="btn-letter"></span> <span class="question-answer"></span>
+        </button>
+      </main>
+  </section>
+</body>
+</html>
